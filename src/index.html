@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Expenses chart component</title>
+  </head>
+  <body
+    class="flex min-h-screen items-center justify-center bg-cream font-dm-sans"
+  >
+    <main class="m-2 flex h-[400px] w-[300px] flex-col gap-4">
+      <div
+        class="flex basis-1/5 items-center justify-between rounded-lg bg-soft-red p-4 text-very-pale-orange"
+      >
+        <div>
+          <p class="text-xs">My balance</p>
+          <p class="text-xl font-semibold">$921.48</p>
+        </div>
+        <div class="h-2/3">
+          <img class="h-full" src="./images/logo.svg" alt="" />
+        </div>
+      </div>
+      <div class="basis-4/5 rounded-lg bg-very-pale-orange p-4">
+        <div class="text-xl font-bold text-dark-brown">
+          Spending - Last 7 days
+        </div>
+        <div class="mt-2 h-3/5 border-b-2 border-cream">
+          <div
+            class="flex h-[85%] items-end justify-between gap-2 text-center text-xs text-medium-brown"
+            id="chart"
+          ></div>
+        </div>
+        <div class="mt-4 flex items-end justify-between">
+          <div>
+            <p class="text-xs text-medium-brown">Total this month</p>
+            <p class="text-3xl font-bold text-dark-brown">$478.33</p>
+          </div>
+          <div>
+            <p class="text-right text-sm font-bold text-dark-brown">+2.4%</p>
+            <p class="text-xs text-medium-brown">from last month</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
